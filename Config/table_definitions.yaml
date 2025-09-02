@@ -13,6 +13,8 @@ bronze_layer:
         type: STRING
       - name: Region
         type: STRING
+      - name: UpdatedAt
+        type: TIMESTAMP
   customers_landing:
     columns:
       - name: CustomerID
