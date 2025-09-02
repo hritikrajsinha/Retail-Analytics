@@ -1,0 +1,3 @@
+catalog: banking_analytics
+update_table: table_update_log
+update_schema: metadata_table

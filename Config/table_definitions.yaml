@@ -1,0 +1,49 @@
+bronze_layer:
+  sales_landing:
+    columns:
+      - name: OrderID
+        type: STRING
+      - name: CustomerID
+        type: STRING
+      - name: ProductID
+        type: STRING
+      - name: Date
+        type: STRING
+      - name: Price
+        type: STRING
+      - name: Region
+        type: STRING
+  customers_landing:
+    columns:
+      - name: CustomerID
+        type: STRING
+      - name: Name
+        type: STRING
+      - name: Age
+        type: STRING
+      - name: Gender
+        type: STRING
+      - name: Country
+        type: STRING
+  products_landing:
+    columns:
+      - name: ProductID
+        type: STRING
+      - name: Category
+        type: STRING
+      - name: SubCategory
+        type: STRING
+      - name: Brand
+        type: STRING
+      - name: Cost
+        type: STRING
+  clickstream_landing:
+    columns:
+      - name: user_id
+        type: STRING
+      - name: event
+        type: STRING
+      - name: timestamp
+        type: STRING
+      - name: product_id
+        type: STRING
