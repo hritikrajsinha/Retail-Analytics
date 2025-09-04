@@ -3,3 +3,5 @@ update_table: table_update_log
 update_schema: metadata_table
 sales_file_path: s3://input-files-bank/sales.csv
 customers_file_path: s3://input-files-bank/customers.csv
+products_file_path: s3://input-files-bank/products.csv
+clickstream_file_path: s3://input-files-bank/clickstream.json
