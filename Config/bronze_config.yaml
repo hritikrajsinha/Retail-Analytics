@@ -8,3 +8,13 @@ customers_landing:
   source_table:
   target_schema: bronze_layer
   target_table: customers_landing
+products_landing:
+  source_schema:
+  source_table:
+  target_schema: bronze_layer
+  target_table: products_landing
+clickstream_landing:
+  source_schema:
+  source_table:
+  target_schema: bronze_layer
+  target_table: clickstream_landing
