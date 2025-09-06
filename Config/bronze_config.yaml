@@ -1,20 +1,25 @@
-sales_landing:
-  source_schema:
-  source_table:
-  target_schema: bronze_layer
-  target_table: sales_landing
-customers_landing:
-  source_schema:
-  source_table:
-  target_schema: bronze_layer
-  target_table: customers_landing
-products_landing:
-  source_schema:
-  source_table:
-  target_schema: bronze_layer
-  target_table: products_landing
-clickstream_landing:
-  source_schema:
-  source_table:
-  target_schema: bronze_layer
-  target_table: clickstream_landing
+bronze:
+  sales_landing:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/bronze_ingestion/sales_ingestion
+    source_schema:
+    source_table:
+    target_schema: bronze_layer
+    target_table: sales_landing
+  customers_landing:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/bronze_ingestion/customers_ingestion
+    source_schema:
+    source_table:
+    target_schema: bronze_layer
+    target_table: customers_landing
+  products_landing:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/bronze_ingestion/products_ingestion
+    source_schema:
+    source_table:
+    target_schema: bronze_layer
+    target_table: products_landing
+  clickstream_landing:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/bronze_ingestion/clickstream_ingestion
+    source_schema:
+    source_table:
+    target_schema: bronze_layer
+    target_table: clickstream_landing
