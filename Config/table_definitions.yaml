@@ -9,6 +9,8 @@ bronze_layer:
         type: STRING
       - name: Date
         type: STRING
+      - name: Quantity
+        type: STRING
       - name: Price
         type: STRING
       - name: Region
@@ -27,6 +29,8 @@ bronze_layer:
         type: STRING
       - name: Country
         type: STRING
+      - name: UpdatedAt
+        type: TIMESTAMP
   products_landing:
     columns:
       - name: ProductID
@@ -39,6 +43,8 @@ bronze_layer:
         type: STRING
       - name: Cost
         type: STRING
+      - name: UpdatedAt
+        type: TIMESTAMP
   clickstream_landing:
     columns:
       - name: user_id
@@ -49,3 +55,64 @@ bronze_layer:
         type: STRING
       - name: product_id
         type: STRING
+      - name: UpdatedAt
+        type: TIMESTAMP
+silver_transformation:
+  sales_transformed:
+    columns:
+      - name: OrderID
+        type: BIGINT NOT NULL
+      - name: CustomerID
+        type: STRING
+      - name: ProductID
+        type: STRING NOT NULL
+      - name: Date
+        type: DATE
+      - name: Quantity
+        type: BIGINT
+      - name: Price
+        type: FLOAT
+      - name: Region
+        type: STRING
+      - name: UpdatedAT
+        type: TIMESTAMP
+  customers_transformed:
+    columns:
+      - name: CustomerID
+        type: STRING NOT NULL
+      - name: Name
+        type: STRING
+      - name: Age
+        type: INT
+      - name: Gender
+        type: STRING
+      - name: Country
+        type: STRING
+      - name: UpdatedAT
+        type: TIMESTAMP
+  products_transformed:
+    columns:
+      - name: ProductID
+        type: STRING NOT NULL
+      - name: Category
+        type: STRING
+      - name: SubCategory
+        type: STRING
+      - name: Brand
+        type: STRING
+      - name: Cost
+        type: FLOAT
+      - name: UpdatedAT
+        type: TIMESTAMP
+  clickstream_transformed:
+    columns:
+      - name: user_id
+        type: STRING NOT NULL
+      - name: event
+        type: STRING
+      - name: timestamp
+        type: TIMESTAMP
+      - name: product_id
+        type: STRING NOT NULL
+      - name: UpdatedAT
+        type: TIMESTAMP

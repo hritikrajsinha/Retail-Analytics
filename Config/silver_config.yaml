@@ -1,0 +1,25 @@
+silver:
+  sales_transformed:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/silver_transformation/sales_transformed
+    source_schema: bronze_layer
+    source_table: sales_landing
+    target_schema: silver_transformation
+    target_table: sales_transformed
+  customers_landing:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/silver_transformation/customers_transformed
+    source_schema: bronze_layer
+    source_table: customers_landing
+    target_schema: silver_transformation
+    target_table: customers_transformed
+  products_landing:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/silver_transformation/products_transformed
+    source_schema: bronze_layer
+    source_table: products_landing
+    target_schema: silver_transformation
+    target_table: products_transformed
+  clickstream_landing:
+    notebook_path: /Workspace/Users/hritikraj143@gmail.com/Retail-Analytics/Notebooks/silver_transformation/clickstream_transformed
+    source_schema: bronze_layer
+    source_table: clickstream_landing
+    target_schema: silver_transformation
+    target_table: clickstream_transformed
