@@ -66,8 +66,6 @@ silver_transformation:
         type: STRING
       - name: ProductID
         type: STRING NOT NULL
-      - name: Date
-        type: DATE
       - name: Quantity
         type: BIGINT
       - name: Price
@@ -76,6 +74,12 @@ silver_transformation:
         type: STRING
       - name: UpdatedAT
         type: TIMESTAMP
+      - name: OrderDate
+        type: DATE
+      - name: Is_Quantity_Missing
+        type: BOOLEAN
+      - name: Is_Price_Missing
+        type: BOOLEAN
   customers_transformed:
     columns:
       - name: CustomerID
